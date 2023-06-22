@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+:root {
+  --deepBlue: #11009e;
+  --lightBlue: #4942e4;
+  --lighterBlue: #8696fe;
+  --white: #fff;
+  --orange: yellow;
+}
+
+body,
+html {
+  /* overflow: hidden; */
+  max-width: 100%;
+}
+
+header {
+  background-color: var(--deepBlue);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  text-align: center;
+  /* border-bottom: 2px solid var(--white); */
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+#logo {
+  color: var(--orange);
+  font-size: 2rem;
+}
+
+li a {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+#btn {
+  background-color: var(--white);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: var(--deepBlue);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+main {
+  background: url(../img/school_boy.jpeg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100%;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+.user {
+  height: 100px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.user p {
+  font-size: 1.2rem;
+  color: #4942e4;
+}
+
+#delete {
+  cursor: pointer;
+  color: red;
+}
+
+#username {
+  color: white;
+  font-size: 2rem;
+}
+
+#username a {
+  color: var(--deepBlue);
+}
+
+form {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  background-color: white;
+  color: rgb(8, 8, 194);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  width: 500px;
+  height: 500px;
+  display: grid;
+}
+
+form p {
+  display: grid;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input[type="submit"] {
+  background-color: rgb(8, 8, 194);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  background-color: white;
+  color: rgb(8, 8, 194);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  width: 500px;
+  height: 500px;
+  display: grid;
+}
+
+#formUpdate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(8, 8, 194);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+b {
+  color: var(--lightBlue);
+  font-size: 2rem;
+}
+.delete_all{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+#deleteAllUsers {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 10px;
+  cursor: pointer;
+}

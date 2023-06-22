@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" id="logo">CRUD APP</a>
+        <nav>
+           <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/form">Add User</a></li>
+            <li><a href="/about">About</a></li>
+           </ul>
+        </nav>
+        <button id="btn">Contact</button>
+     </header>
+
+     <main>
+    <form action="/update-user/<%=result._id%>?_method=PUT" method="post">
+        <p>
+            <input type="text" name="username" value="<%= result.username %>" placeholder="Enter your full name">
+        </p>
+        <p>
+            <input type="text" name="state" value="<%= result.state %>" id="state" placeholder="State of Origin">
+        </p>
+        <p>
+            <input type="date" name="DOB" value="<%= result.DOB %>" id="DOB">
+        </p>
+        <p>
+            <input type="number" name="age" value="<%= result.age %>" id="age" placeholder="Enter your age">
+        </p>
+        <p>
+            <p>Gender:</p>
+            <input type="text" name="gender" id="gender" value="<%= result.gender %>" placeholder="male/female" >
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</main>
+</body>
+</html>
